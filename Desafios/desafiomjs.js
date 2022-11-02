@@ -33,7 +33,6 @@ class Contenedor {
                 throw new Error(`Hay un error: `+ error)
             }
     }
-    }
     getById(){
 
     }
@@ -46,3 +45,4 @@ class Contenedor {
     deleteAll(){
 
     }
+}
