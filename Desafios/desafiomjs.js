@@ -79,16 +79,16 @@ const contenedor = new Contenedor ('productos.txt')
         precio: 1800,
         img: 'https://scontent.fepa5-1.fna.fbcdn.net/v/t1.6435-9/82168983_849056105563189_1460438564545232896_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=aKluz2DrJBMAX8662Hh&_nc_ht=scontent.fepa5-1.fna&oh=00_AfAkHtLoABiTChhvb9g2Bbd1EQhKS8CCCEZAXwZNE5iXPA&oe=638CD034'
     }) 
-    // await contenedor.save({ 
-    //     titulo: 'Maquina BarberStyle "Jordan',
-    //     precio: 1600,
-    //     img: 'https://scontent.fepa5-1.fna.fbcdn.net/v/t1.6435-9/82018988_849021902233276_1468573125229674496_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QhE0e_ypUCIAX8KpAPb&_nc_ht=scontent.fepa5-1.fna&oh=00_AfCnZw1_yem5ofUe1cpSkws2n5_81BgExzdpqtizF4CZsQ&oe=638CAA39'
-    // }) 
-    // await contenedor.save({
-    //     titulo: 'Maquina BarberStyle "Alien',
-    //     precio: 1700,
-    //     img: 'https://scontent.fepa5-1.fna.fbcdn.net/v/t1.6435-9/82360279_849055342229932_7079897328508731392_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZzHN_e1Ah74AX8yLTWd&_nc_ht=scontent.fepa5-1.fna&oh=00_AfDRJ7-Qgo0AJy4c1B5rASGTollP3Sh788qkO6T8LuDCmA&oe=638CB252'
-    // })
+    await contenedor.save({ 
+        titulo: 'Maquina BarberStyle "Jordan',
+        precio: 1600,
+        img: 'https://scontent.fepa5-1.fna.fbcdn.net/v/t1.6435-9/82018988_849021902233276_1468573125229674496_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=QhE0e_ypUCIAX8KpAPb&_nc_ht=scontent.fepa5-1.fna&oh=00_AfCnZw1_yem5ofUe1cpSkws2n5_81BgExzdpqtizF4CZsQ&oe=638CAA39'
+    }) 
+    await contenedor.save({
+        titulo: 'Maquina BarberStyle "Alien',
+        precio: 1700,
+        img: 'https://scontent.fepa5-1.fna.fbcdn.net/v/t1.6435-9/82360279_849055342229932_7079897328508731392_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZzHN_e1Ah74AX8yLTWd&_nc_ht=scontent.fepa5-1.fna&oh=00_AfDRJ7-Qgo0AJy4c1B5rASGTollP3Sh788qkO6T8LuDCmA&oe=638CB252'
+    })
     await contenedor.getById(1)
     const productos = await contenedor.getAll()
     console.log('Productos: ', productos);
