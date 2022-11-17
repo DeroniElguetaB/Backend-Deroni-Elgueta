@@ -73,7 +73,7 @@ class Contenedor {
 }
 
 const main = async () => {
-const contenedor = new Contenedor ('productos.txt')
+    const contenedor = new Contenedor ('productos.txt')
     await contenedor.save({
         titulo: 'Maquina BarberStyle "The Simpsons"',
         precio: 1800,
